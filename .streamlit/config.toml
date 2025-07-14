@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#4CAF50"
+backgroundColor = "#121212"  # near black
+secondaryBackgroundColor = "#1E1E1E"  # dark gray for widgets
+textColor = "#FFFFFF"  # white text
+font = "sans serif"

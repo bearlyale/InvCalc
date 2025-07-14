@@ -20,7 +20,7 @@ def calculate_investment_value(years, initial_investment, monthly_investment,
 
 
 # --- Streamlit UI ---
-st.title("📈 Simple Investment Calculator")
+st.title("Investment Calculator")
 
 years = st.slider("Investment Timeframe (Years)", 1, 50, 1)  
 initial = st.number_input("Day 1 Investment ($)", value=0.0)  
@@ -33,4 +33,4 @@ if st.button("Calculate"):
     result = calculate_investment_value(
         years, initial, monthly, increase, return_rate, fee
     )
-    st.success(f"📊 Your investment will be worth: **${result:,.2f}**")
+    st.success(f"Your investment will be worth: **${result:,.2f}**")
