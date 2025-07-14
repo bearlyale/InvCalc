@@ -22,12 +22,12 @@ def calculate_investment_value(years, initial_investment, monthly_investment,
 # --- Streamlit UI ---
 st.title("📈 Simple Investment Calculator")
 
-years = st.slider("Investment Timeframe (Years)", 1, 50, 17)
-initial = st.number_input("Day 1 Investment ($)", value=3000)
+years = st.slider("Investment Timeframe (Years)", 1, 50, 0)
+initial = st.number_input("Day 1 Investment ($)", value=0)
 monthly = st.number_input("Monthly Investment ($)", value=200)
-increase = st.slider("Annual Increase in Monthly Investment (%)", 0, 20, 5)
-return_rate = st.slider("Expected Annual Return (%)", 0.0, 20.0, 8.0)
-fee = st.slider("Annual Bank Fee (%)", 0.0, 5.0, 1.0)
+increase = st.slider("Annual Increase in Monthly Investment (%)", 0, 20, 0)
+return_rate = st.slider("Expected Annual Return (%)", 0.0, 20.0, 0)
+fee = st.slider("Annual Bank Fee (%)", 0.0, 5.0, 0)
 
 if st.button("Calculate"):
     result = calculate_investment_value(
